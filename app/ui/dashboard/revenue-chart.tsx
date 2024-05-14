@@ -1,5 +1,5 @@
 // vendors
-import { lusitana } from '@/app/ui/fonts';
+
 import { CalendarIcon } from '@heroicons/react/24/outline';
 
 // utils
@@ -9,7 +9,7 @@ import { generateYAxis } from '@/app/lib/utils';
 import { fetchRevenue } from '@/app/lib/data';
 
 // fonts
-import { Revenue } from '@/app/lib/definitions';
+import { lusitana } from '@/app/ui/fonts';
 
 // This component is representational only.
 // For data visualization UI, check out:
