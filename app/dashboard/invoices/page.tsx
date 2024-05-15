@@ -1,5 +1,6 @@
 // vendors
 import { Suspense } from 'react';
+import { Metadata } from 'next';
 
 // components
 import Search from '@/app/ui/search';
@@ -13,6 +14,10 @@ import { lusitana } from '@/app/ui/fonts';
 
 // data
 import { fetchInvoicesPages } from '@/app/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 export default async function Page({
   searchParams,

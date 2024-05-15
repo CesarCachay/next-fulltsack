@@ -1,4 +1,12 @@
+// vendors
+import { Metadata } from 'next';
+
+// components
 import SideNav from '@/app/ui/dashboard/sidenav';
+
+export const metadata: Metadata = {
+  title: 'Dashboard Page',
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

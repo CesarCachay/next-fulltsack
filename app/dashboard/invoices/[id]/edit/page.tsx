@@ -1,5 +1,6 @@
 // vendors
 import { notFound } from 'next/navigation';
+import { Metadata } from 'next';
 
 // components
 import Form from '@/app/ui/invoices/edit-form';
@@ -7,6 +8,10 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 
 // utils
 import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Edit Invoice Page',
+};
 
 export default async function Page({ params }: { params: { id: string } }) {
   // get id by params
