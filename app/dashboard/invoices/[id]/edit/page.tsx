@@ -1,3 +1,6 @@
+// vendors
+import { notFound } from 'next/navigation';
+
 // components
 import Form from '@/app/ui/invoices/edit-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
@@ -15,7 +18,9 @@ export default async function Page({ params }: { params: { id: string } }) {
     fetchCustomers(),
   ]);
 
-  console.log({ invoice, customers });
+  if (!invoice) {
+    notFound();
+  }
 
   return (
     <main>
